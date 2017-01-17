@@ -6,3 +6,4 @@ reg import Cmder.reg
 git clone https://github.com/ctfhacker/cmder-dotfiles dotfiles
 cd dotfiles
 .\install.bat
+cd ..
