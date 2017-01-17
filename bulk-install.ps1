@@ -19,3 +19,4 @@ choco install -y windows-sdk-8.1
 choco install -y windows-sdk-10.1
 choco install -y visualstudio2012professional
 choco install -y cmake
+choco install -y vim
