@@ -18,8 +18,11 @@ choco install -y wget
 choco install -y windows-sdk-8.1
 choco install -y windows-sdk-10.1
 choco install -y visualstudio2012professional
-choco install -y cmake
 choco install -y vim
 choco install -y unzip
+
+wget "https://cmake.org/files/v3.7/cmake-3.7.2-win32-x86.msi"
+msiexec /i cmake-3.7.2-win32-x86.msi /norestart /quiet /qn
+rm cmake-3.7.2-win32-x86.msi
 
 "C:\Program Files\Microsoft Visual Studio 11.0\VC\vcvarsall.bat"
