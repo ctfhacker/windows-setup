@@ -1,3 +1,6 @@
+if(-Not (Get-Command choco -errorAction SilentlyContinue)){
+    iex ((new-object system.net.webclient).downloadstring('https://chocolatey.org/install.ps1'))
+}
 choco install -y windbg
 Write-Host "Installing pykd" -foregroundcolor "Green" -backgroundcolor "Black"
 C:\Python2*\Scripts\pip2.exe install pykd
