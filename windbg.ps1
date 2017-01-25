@@ -1,4 +1,5 @@
 if(-Not (Get-Command choco -errorAction SilentlyContinue)){
+    Set-ExecutionPolicy Unrestricted
     iex ((new-object system.net.webclient).downloadstring('https://chocolatey.org/install.ps1'))
 }
 choco install -y windbg
