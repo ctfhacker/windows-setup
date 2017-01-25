@@ -5,6 +5,9 @@ if(-Not (Get-Command choco -errorAction SilentlyContinue)){
 Write-Host "Installing Cmder" -foregroundcolor "Green" -backgroundcolor "Black"
 choco install -y cmder
 
+Write-Host "Installing git" -foregroundcolor "Green" -backgroundcolor "Black"
+choco install -y git
+
 Write-Host "Installing Cmder dotfiles" -foregroundcolor "Green" -backgroundcolor "Black"
 pushd
 cd $HOME
