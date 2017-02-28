@@ -1,10 +1,10 @@
-mkdir C:\home\$USERNAME
+mkdir C:\home\$Env:USERNAME
 
 Write-Host "$HOME -> C:\home\ctfhacker" -foregroundcolor "Green" -backgroundcolor "Black"
-$newHome = 'C:\home\$USERNAME'
+$newHome = 'C:\home\$Env:USERNAME'
 [Environment]::SetEnvironmentVariable('home', "$($newHome)",'Machine');
 
 pushd
-cd C:\home\$USERNAME
+cd C:\home\$Env:USERNAME
 git clone --recursive https://github.com/ctfhacker/dotfiles
 popd
