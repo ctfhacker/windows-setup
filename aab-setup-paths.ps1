@@ -1,7 +1,7 @@
 mkdir C:\home\$Env:USERNAME
 
-Write-Host "$HOME -> C:\home\ctfhacker" -foregroundcolor "Green" -backgroundcolor "Black"
-$newHome = 'C:\home\$Env:USERNAME'
+Write-Host "$HOME -> C:\home\$Env:USERNAME" -foregroundcolor "Green" -backgroundcolor "Black"
+$newHome = "C:\home\$Env:USERNAME"
 [Environment]::SetEnvironmentVariable('home', "$($newHome)",'Machine');
 
 pushd
