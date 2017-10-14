@@ -16,8 +16,8 @@ copy pykd-dlls/x86/pykd.dll "C:\$($p)\Windows Kits\8.0\Debuggers\x86\winext\pykd
 copy pykd-dlls/x86/pykd.dll "C:\$($p)\Windows Kits\8.1\Debuggers\x86\winext\pykd.dll"
 copy pykd-dlls/x86/pykd.dll "C:\$($p)\Windows Kits\10\Debuggers\x86\winext\pykd.dll"
 copy pykd-dlls/x64/pykd.dll "C:\$($p)\Windows Kits\8.0\Debuggers\x64\winext\pykd.dll"
-copy pykd-dlls/x64/pykd.dll "C:\" + $p+ "\Windows Kits\8.1\Debuggers\x64\winext\pykd.dll"
-copy pykd-dlls/x64/pykd.dll "C:\" + $p+ "\Windows Kits\10\Debuggers\x64\winext\pykd.dll"
+copy pykd-dlls/x64/pykd.dll "C:\$($p)\Windows Kits\8.1\Debuggers\x64\winext\pykd.dll"
+copy pykd-dlls/x64/pykd.dll "C:\$($p)\Windows Kits\10\Debuggers\x64\winext\pykd.dll"
 
 Write-Host "Adding windbg/cdb to system wide path" -foregroundcolor "Green" -backgroundcolor "Black"
 $newPath = 'C:\Program Files\Windows Kits\10\Debuggers\x86'
