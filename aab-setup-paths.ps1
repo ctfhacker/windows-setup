@@ -1,5 +1,8 @@
 mkdir C:\home\$Env:USERNAME
 
+choco install -y git
+refreshenv
+
 Write-Host "$HOME -> C:\home\$Env:USERNAME" -foregroundcolor "Green" -backgroundcolor "Black"
 $newHome = "C:\home\$Env:USERNAME"
 [Environment]::SetEnvironmentVariable('home', "$($newHome)",'Machine');
