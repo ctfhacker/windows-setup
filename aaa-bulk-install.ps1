@@ -22,7 +22,7 @@ choco install -y sysinternals
 choco install -y wget
 choco install -y windows-sdk-8.1
 choco install -y windows-sdk-10.1
-choco install -y vim
+choco install -y vim --version 7.4.2066
 choco install -y VisualStudio2015Community
 choco install -y vcbuildtools
 choco install -y unzip
