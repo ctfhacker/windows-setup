@@ -23,10 +23,11 @@ choco install -y wget
 choco install -y windows-sdk-8.1
 choco install -y windows-sdk-10.1
 choco install -y vim --version 7.4.2066
-choco install -y VisualStudio2015Community
+choco install -y VisualStudio2017Community
 choco install -y vcbuildtools
+choco install -y visualstudio2017buildtools
 choco install -y unzip
 
 wget "https://cmake.org/files/v3.9/cmake-3.9.0-win32-x86.msi"
-msiexec /i cmake-3.7.2-win32-x86.msi /norestart /quiet /qn
-rm cmake-3.7.2-win32-x86.msi
+msiexec /i cmake-3.9.0-win32-x86.msi /norestart /quiet /qn
+rm cmake-3.9.0-win32-x86.msi
